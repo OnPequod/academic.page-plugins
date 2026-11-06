@@ -36,5 +36,7 @@ explains each access level. Connecting an agent needs a site on Pro or Pro+.
 `plugins/academic-page` connects to the Academic.page MCP server at
 `https://academic.page/mcp`. It holds a Claude manifest
 (`.claude-plugin/plugin.json`) and a Codex manifest (`.codex-plugin/plugin.json`).
-Both read the server from `.mcp.json`. The marketplace files are
+Both read the server from `.mcp.json`. Its skills, in `skills/`, guide the
+agent through adding a CV to a site, checking publications against their
+published records, and building a course from a syllabus. The marketplace files are
 `.claude-plugin/marketplace.json` and `.agents/plugins/marketplace.json`.
