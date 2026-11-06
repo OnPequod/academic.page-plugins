@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "academic-page": {
+      "type": "http",
+      "url": "https://academic.page/mcp"
+    }
+  }
+}

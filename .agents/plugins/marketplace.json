@@ -1,0 +1,12 @@
+{
+  "name": "academic-page",
+  "interface": { "displayName": "Academic.page" },
+  "plugins": [
+    {
+      "name": "academic-page",
+      "source": { "source": "local", "path": "./plugins/academic-page" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
