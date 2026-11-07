@@ -7,8 +7,21 @@ description: How to work on an Academic.page site through its tools - what each 
 
 ## Check the access first
 
-Call `key_show`. It names the site this connection works on and its access.
-The tools you see depend on that access.
+Call `key_show`. It lists the sites this connection reaches, with each
+site's `id` and `site_type`, and its access. The tools you see depend on that
+access.
+
+## Pick the right site
+
+A person usually has several sites: a personal site, and course, lab, or study
+sites. Tools work on the connection's default site (the personal site, when
+there is one) unless you pass `site_id`. Courses live on course sites, lab
+members on lab sites, and a study on a study site, so pass that site's
+`site_id`. A `section_not_enabled` error usually means the wrong site.
+
+A site the person mentions that `key_show` does not list is one this
+connection does not reach. They can let it reach all their sites on the AI
+agents page in Academic.page (Connections tab).
 
 - **Edit your site** (the usual one) can change everything on the site except
   deleting: the profile and CV, publications, positions, degrees, links,

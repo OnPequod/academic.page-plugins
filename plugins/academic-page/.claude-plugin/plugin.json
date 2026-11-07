@@ -1,7 +1,7 @@
 {
   "name": "academic-page",
   "displayName": "Academic.page",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Connect to Academic.page: read your site and add publications, talks, projects, and courses from your CV or syllabus.",
   "author": { "name": "Academic.page", "url": "https://academic.page" },
   "homepage": "https://academic.page/manual/ai-apps",

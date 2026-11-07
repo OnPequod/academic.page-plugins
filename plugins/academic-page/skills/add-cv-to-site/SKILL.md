@@ -10,7 +10,8 @@ user what you added and what you left for them.
 
 ## Before you start
 
-1. Call `key_show`. It names the site and the access this connection has.
+1. Call `key_show`. It lists the sites this connection reaches and its access.
+   A CV belongs on the personal site, the default when you pass no `site_id`.
    - **Edit your site** or **Full access** can add everything on a CV.
    - **Read only** changes nothing. Compare the CV with the site and report
      what is missing.

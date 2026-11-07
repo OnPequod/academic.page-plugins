@@ -10,8 +10,9 @@ asks you to publish it, so they can review it first.
 
 ## Steps
 
-1. Call `key_show` and `site_get`. Courses belong on a course site, or on a
-   personal site that uses courses. Check `courses_list` for a course that
+1. Call `key_show` to find the course site, and pass its `site_id` to every
+   call below. Courses belong on a course site, or on a personal site that
+   uses courses. Check `courses_list` for a course that
    already matches, and ask before adding a second one.
 2. Upload the syllabus file with `media_upload`, sending it as
    `content_base64` with its `filename`. Files over 8 MB go through
