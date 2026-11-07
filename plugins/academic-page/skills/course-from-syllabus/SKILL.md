@@ -5,8 +5,8 @@ description: Set up a course on Academic.page from a syllabus, with its lessons,
 
 # Build a course from a syllabus
 
-Drafts only access is enough: the course stays a draft, and the user
-publishes it when it is ready.
+Any access but Read only is enough. Keep the course a draft unless the user
+asks you to publish it, so they can review it first.
 
 ## Steps
 

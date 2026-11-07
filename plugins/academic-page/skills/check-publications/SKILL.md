@@ -12,10 +12,10 @@ suggestions with the user, and to find what the site cannot check on its own.
 
 ## Steps
 
-1. Call `key_show`. Changing publications needs Full access. With less, report
-   what you find and tell the user they can give this agent Full access on
-   the AI agents page in Academic.page (Connections tab), then start a new
-   conversation.
+1. Call `key_show`. Changing publications needs Edit your site or Full
+   access. With Read only or Drafts only, report what you find and tell the
+   user they can change this agent to Edit your site on the AI agents page in
+   Academic.page (Connections tab), then start a new conversation.
 2. Call `publications_list` and read each publication's `suggestion`. A
    suggestion lists each difference in `changes`.
 3. For each suggestion, show the user the differences in plain words, such

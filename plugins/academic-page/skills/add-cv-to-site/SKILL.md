@@ -11,14 +11,14 @@ user what you added and what you left for them.
 ## Before you start
 
 1. Call `key_show`. It names the site and the access this connection has.
-   - **Drafts only** can add talks and projects as drafts. It cannot add
-     publications, positions, or degrees, because those appear on the site as
-     soon as they are saved. If the CV is mostly publications, tell the user
-     they can give this agent Full access on the AI agents page in
-     Academic.page (Connections tab) and start a new conversation, or offer
-     to add only the talks.
+   - **Edit your site** or **Full access** can add everything on a CV.
    - **Read only** changes nothing. Compare the CV with the site and report
      what is missing.
+   - **Drafts only**, an older level, can add talks and projects as drafts
+     but not publications, positions, or degrees. Tell the user they can
+     change this agent to Edit your site on the AI agents page in
+     Academic.page (Connections tab) and start a new conversation, or offer
+     to add only the talks.
 2. Read what the site has: `profile_get`, `profile_positions_list`,
    `profile_degrees_list`, `publications_list`, and `talks_list`.
 
@@ -43,12 +43,14 @@ user what you added and what you left for them.
   `meeting_name`, `location`, `talk_type`, and `copresenters` where the CV
   gives them. Keep the CV's order within each year with `year_order`.
 - Add positions and degrees with `profile_positions_create` and
-  `profile_degrees_create` (Full access only).
+  `profile_degrees_create`.
 - Skip anything the site already lists, even if the wording differs slightly.
   Ask the user when you are unsure whether two entries are the same.
 
 ## When you finish
 
 Tell the user what you added, by kind and count, what you skipped as already
-there, and what you could not add with this connection's access. Talks you
-added are drafts: the user reviews and publishes them in the admin.
+there, and what you could not add with this connection's access. Publications,
+positions, and degrees appear on the site at once. Talks you added are drafts
+unless the user asked you to publish them: they can review and publish them in
+the admin.
