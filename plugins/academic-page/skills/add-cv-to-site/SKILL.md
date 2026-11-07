@@ -14,8 +14,9 @@ user what you added and what you left for them.
    - **Drafts only** can add talks and projects as drafts. It cannot add
      publications, positions, or degrees, because those appear on the site as
      soon as they are saved. If the CV is mostly publications, tell the user
-     to disconnect and connect again with Full access, or offer to add only
-     the talks.
+     they can give this agent Full access on the AI agents page in
+     Academic.page (Connections tab) and start a new conversation, or offer
+     to add only the talks.
    - **Read only** changes nothing. Compare the CV with the site and report
      what is missing.
 2. Read what the site has: `profile_get`, `profile_positions_list`,
