@@ -1,7 +1,7 @@
 {
   "name": "academic-page",
   "description": "Plugins from Academic.page, for building and keeping up your academic website.",
-  "owner": { "name": "Academic.page", "url": "https://academic.page" },
+  "owner": { "name": "Pequod Computing", "url": "https://academic.page" },
   "plugins": [
     {
       "name": "academic-page",
