@@ -9,16 +9,19 @@ published records.
 
 **Claude** (desktop app): open Customize, then Plugins. Select Add, then Add
 marketplace, then Add from a repository, and enter `OnPequod/academic.page-plugins`.
-Under Discover, add Academic.page. In Claude Code, run:
+Under Discover, add Academic.page. Select Manage next to Academic.page and
+open Connectors. If academic-page is not connected, select Connect, then
+Continue. In Claude Code, run:
 
 ```
 claude plugin marketplace add OnPequod/academic.page-plugins
 claude plugin install academic-page@academic-page
 ```
 
-**ChatGPT and Codex**: in the ChatGPT desktop app, open Customize, then
+**ChatGPT and Codex**: in the ChatGPT desktop app, open Settings, then
 Plugins. Select Add, then Add a marketplace, and enter
-`OnPequod/academic.page-plugins`. In Codex, run:
+`OnPequod/academic.page-plugins`. Search for Academic.page and install it.
+The first time you use it, select Authenticate when it asks. In Codex, run:
 
 ```
 codex plugin marketplace add OnPequod/academic.page-plugins
@@ -36,7 +39,8 @@ explains each access level. Connecting an agent needs a site on Pro or Pro+.
 `plugins/academic-page` connects to the Academic.page MCP server at
 `https://academic.page/mcp`. It holds a Claude manifest
 (`.claude-plugin/plugin.json`) and a Codex manifest (`.codex-plugin/plugin.json`).
-Both read the server from `.mcp.json`. Its skills, in `skills/`, guide the
-agent through adding a CV to a site, checking publications against their
-published records, and building a course from a syllabus. The marketplace files are
+Both read the server from `.mcp.json`. Its four skills, in `skills/`, guide the
+agent through working with Academic.page in general, adding a CV to a site,
+checking publications against their published records, and building a course
+from a syllabus. The marketplace files are
 `.claude-plugin/marketplace.json` and `.agents/plugins/marketplace.json`.
